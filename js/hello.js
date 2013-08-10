@@ -47,6 +47,11 @@ $(document).ready(function() {
   $('#pause').click(function() { apiswf.rdio_pause(); });
   $('#previous').click(function() { apiswf.rdio_previous(); });
   $('#next').click(function() { apiswf.rdio_next(); });
+  $('#seek').click(function() { 
+		var position = parseFloat( $('#seekpos').val() );
+		apiswf.rdio_seek(position);
+	});
+	
 });
 
 
